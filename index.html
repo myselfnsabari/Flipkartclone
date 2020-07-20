@@ -1,88 +1,1115 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Online Shopping Site for Mobiles, Electronics, Furniture, Grocery,
+      Lifestyle, Books &amp; More. Best Offers!
+    </title>
+    <!---flipkart favicon-->
+    <link
+      rel="shortcut icon"
+      href="./images/favifilp.png"
+      type="image/x-icon"/>
+    <!------adding google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"/>
+    <!-----custom css flipkart.css-->
+    <link rel="stylesheet" href="./css/view port/flipkart.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
-    Online Shopping Site for Mobiles, Electronics, Furniture, Grocery,
-    Lifestyle, Books &amp; More. Best Offers!
-  </title>
-  <!---flipkart favicon-->
-  <link rel="shortcut icon" href="./images/favifilp.png" type="image/x-icon" />
-  <!------adding google fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <!-----custom css flipkart.css-->
-  <link rel="stylesheet" href="./css/view port/flipkart.css" />
+    <!------responsive design css (RWD css's)-->
+    <link rel="stylesheet" href="./css/view port/mobile.css" />
+    <link rel="stylesheet" href="./css/view port/tablet.css" />
+    <link rel="stylesheet" href="./css/view port/laptop-desktop.css" />
+  </head>
 
-  <!------responsive design css (RWD css's)-->
-  <link rel="stylesheet" href="./css/viewport/laptop-desktop.css" />
-  <link rel="stylesheet" href="./css/viewport/mobile.css" />
-  <link rel="stylesheet" href="./css/viewport/tablet.css" />
-</head>
-
-<body>
-  <!----flipkart header block starts here-->
-  <section id="headerBlock">
-    <article>
-      <div class="leftHeader">
-        <div class="logo">
-          <a href="/" class="main_logo_block">
-            <img src="./images/flipkart-plus_4ee2f9.png" alt="main-logo" />
-          </a>
-          <a href="/plus" class="plus_logo_block">
-            <span class="explore">Explore</span>
-            <span class="plus">Plus</span>
-            <span class="plus_logo"><img src="./images/plus_b13a8b.png" alt="plus_logo" /></span>
-          </a>
+  <body>
+    <!----flipkart header block starts here-->
+   
+    <section id="headerBlock">
+      <label for="bars" id="barsBlock"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="bars" hidden />
+      
+      <article>
+        <div class="leftHeader">
+          <div class="logo">
+            <a href="/" class="main_logo_block">
+              <img src="./images/flipkart-plus_4ee2f9.png" alt="main-logo" />
+            </a>
+            <a href="/plus" class="plus_logo_block">
+              <span class="explore">Explore</span>
+              <span class="plus">Plus</span>
+              <span class="plus_logo"><img src="./images/plus_b13a8b.png" alt="plus_logo"/></span>
+            </a>
+          </div>
+          <div class="search">
+            <input
+              type="text"
+              placeholder="search for products,brands and more"
+              class="searchInput"/>
+            <span class="search-icon-block"><i class="fas fa-search"></i></span>
+          </div>
         </div>
-        <div class="search">
-          <input type="text" placeholder="search for products,brands and more" class="searchInput" />
-          <span class="search-icon-block"><i class="fas fa-search"></i></span>
-        </div>
-      </div>
-      <div class="rightHeader">
-        <nav>
-          <ul class="navbar">
-            <li class="nav-item first-child"><a href="" class="nav-link">Login
-              </a>
-               <!---- <footer class="arrow">
-                    <span class="hoverg"><i class="fas fa-sort-down"></i></span>
-                </footer>-->
-            
+        <div class="rightHeader">
+          <nav>
+            <ul class="navbar">
+              <li class="nav-item first-child">
+                <a href="" class="nav-links">Login </a>
 
-              <ul class="dropdown">
-                  
-                <li class="dropdownMenu customer_links">
-                  <span><a href="" class="customer"> New customer?</a>
-                  </span>
-                  <span><a href="" class="signup">Signup</a></span>
-                </li>
-                <li class="dropdownMenu"><a href="" class="drop-links">My Profile</a></li>
-                <li class="dropdownMenu"><a href="" class="drop-links">Flipkart Plus Zone</a></li>
-                <li class="dropdownMenu"><a href="" class="drop-links">Orders</a></li>
-                <li class="dropdownMenu"><a href="" class="drop-links">Wishlists</a></li>
-                <li class="dropdownMenu"><a href="" class="drop-links">Rewards</a></li>
+                <ul class="dropdown">
+                  <div class="triangle"></div>
+                  <li class="dropdownMenu customer_links">
+                    <span><a href="" class="customer"> New customer?</a> </span>
+                    <span><a href="" class="signup">Signup</a></span>
+                  </li>
+                  <li class="dropdownMenu">
+                    <span class="profile_icon"><i class="fas fa-user-circle"></i></span>
+                    <a href="" class="drop-links">My Profile</a>
+                  </li>
+                  <li class="dropdownMenu">
+                    <span class="plus_icon"><img src="./images/plus_b13a8b.png" alt="plus_icon"/></span>
+                    <a href="" class="drop-links">Flipkart Plus Zone</a>
+                  </li>
+                  <li class="dropdownMenu">
+                    <span class="profile_icon"><i class="fas fa-folder-plus"></i></span>
+                    <a href="" class="drop-links">Orders</a>
+                  </li>
+                  <li class="dropdownMenu">
+                    <span class="profile_icon"><i class="fas fa-heart"></i></span>
+                    <a href="" class="drop-links">Wishlists</a>
+                  </li>
+                  <li class="dropdownMenu">
+                    <span class="profile_icon"><i class="fas fa-treasure-chest"></i></span>
+                    <a href="" class="drop-links">Rewards</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">More<svg width="4.7" height="8"viewBox="0 0 16 27"xmlns="http://www.w3.org/2000/svg" class="_34Yjv1"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"fill="#fff"class="_14jSvk"></path></svg></a> 
+              <ul class="moredropdown">
+                <div class="triangle"></div>
+                  <li class="dropdownMenu"><span class="-icon"><i class="fas fa-bell"></i></span><a href="">Notification preferences</a></li>
+                  <li class="dropdownMenu"><span class="-icon"><i class="fas fa-suitcase"></i></span><a href="">Sell on Filpkart</a></li>
+                  <li class="dropdownMenu"><span class="-icon"><i class="fas fa-map-marker-question"></i></span><a href="">24x7 customer Care</a></li>
+                  <li class="dropdownMenu"><span class="-icon"><i class="far fa-chart-line-down"></i></span><a href="">Advertise</a></li>
+                  <li class="dropdownMenu"><span class="-icon"><i class="fas fa-arrow-to-bottom"></i></span><a href="">Download App</a></li>
+                
               </ul>
-            </li>
-            <li class="nav-item"><a href="" class="nav-link">More
+              </li>
+              <li class="nav-item"><a href="" class="nav-link"><span class="cart-icon"><i class="far fa-shopping-cart"></i></span>Cart</a></li>
+            </ul>
+          </nav>
+        </div>
+      </article>
+    </section>
+    <!----flipkart header block ends here-->
+    <!----flipkart firstblock starts here -->
+   
+  <section class="firstblock">
+    <article>
+      <nav id="mainmenu">
+      <ul >
+        <li class="listitem"><a href="" class="navlinks">Electronics<svg width="4.7" height="8"viewBox="0 0 16 27"xmlns="http://www.w3.org/2000/svg" class="_34Yjv1"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"fill="#fff"class="_14jSvk"></path></svg></a>
+        <!------mega dropdown menu starts here-->
+      
+        <section class="megadropdownmenu">
+          <div class="megamenudiv">
+            <h4>Mobiles
+              <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+              <ul>
+                <li class="_1KCOnI _3ZgIXy"><a title="Mi" href="/mobiles/mi~brand/pr?sid=tyy,4io&amp;otracker=nmenu_sub_Electronics_0_Mi">Mi
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Realme" href="/mobiles/pr?sid=tyy%2C4io&amp;p%5B%5D=facets.brand%255B%255D%3DRealme&amp;otracker=nmenu_sub_Electronics_0_Realme">Realme
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Samsung" href="/samsung-mobile-store?otracker=nmenu_sub_Electronics_0_Samsung">Samsung
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Infinix" href="/mobiles/pr?sid=tyy%2C4io&amp;otracker=categorytree&amp;p%5B%5D=facets.brand%255B%255D%3DInfinix&amp;otracker=nmenu_sub_Electronics_0_Infinix">Infinix
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="OPPO" href="/oppo-mobile-phones-store?otracker=nmenu_sub_Electronics_0_OPPO">OPPO
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Apple" href="/apple-products-store?otracker=nmenu_sub_Electronics_0_Apple">Apple
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Vivo" href="/mobiles/pr?sid=tyy%2C4io&amp;p%5B%5D=facets.serviceability%5B%5D%3Dfalse&amp;p%5B%5D=facets.brand%255B%255D%3DVivo&amp;otracker=nmenu_sub_Electronics_0_Vivo">Vivo
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span></a></li>
 
-                <svg width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="_34Yjv1">
-                  <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#fff"
-                    class="_14jSvk"></path>
-                </svg>
-              </a></li>
-            <li class="nav-item">
-              <a href="" class="nav-link">
-                <span class="cart-icon"><i class="far fa-shopping-cart"></i></span>
-                Cart</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+                <li class="_1KCOnI _3ZgIXy"><a title="Honor" href="/search?p[]=facets.brand%255B%255D%3DHonor&amp;sid=tyy%2F4io&amp;otracker=CLP_filters&amp;otracker=nmenu_sub_Electronics_0_Honor">Honor
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Asus" href="/mobiles/pr?sid=tyy%2C4io&amp;p%5B%5D=facets.brand%255B%255D%3DAsus&amp;otracker=nmenu_sub_Electronics_0_Asus">Asus
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Poco X2" href="/mobiles/~cs-1c8v939u5p/pr?sid=tyy%2C4io&amp;collection-tab-name=POCO%20X2&amp;otracker=nmenu_sub_Electronics_0_Poco%20X2">Poco X2
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="realme Narzo 10" href="/tyy/4io/~cs-bbqm8szk02/pr?sid=tyy,4io&amp;collection-tab-name=Realme+Narzo+10&amp;otracker=nmenu_sub_Electronics_0_realme%20Narzo%2010">realme Narzo 10
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Infinix Hot 9" href="/tyy/4io/~cs-y0g7ho0c3m/pr?sid=tyy,4io&amp;collection-tab-name=Infinix+Hot+9&amp;otracker=nmenu_sub_Electronics_0_Infinix%20Hot%209">Infinix Hot 9
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="IQOO 3" href="/tyy/4io/~cs-kypqvabi8g/pr?sid=tyy,4io&amp;collection-tab-name=IQOO&amp;otracker=nmenu_sub_Electronics_0_IQOO%203">IQOO 3
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="iPhone SE" href="/mobiles/~cs-fdeu9sdw9c/pr?sid=tyy%2C4io&amp;collection-tab-name=Iphone%20SE%202020&amp;otracker=nmenu_sub_Electronics_0_iPhone%20SE">iPhone SE
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Motorola razr" href="/mobiles/~cs-35ecwn2f18/pr?sid=tyy%2C4io&amp;otracker=nmenu_sub_Electronics_0_Motorola%20razr">Motorola razr
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="realme Narzo 10A" href="/tyy/4io/~cs-crohk4na9x/pr?sid=tyy,4io&amp;collection-tab-name=Realme+Narzo+10A&amp;otracker=nmenu_sub_Electronics_0_realme%20Narzo%2010A">realme Narzo 10A
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Motorola g8 power lite" href="/tyy/4io/~cs-w3eqqvrrdq/pr?sid=tyy,4io&amp;collection-tab-name=Motorola+G8+Power+Lite&amp;otracker=nmenu_sub_Electronics_0_Motorola%20g8%20power%20lite">Motorola g8 power lite
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+              </ul>
+            </h4>
+          </div>
+          <div class="megamenudiv">
+            <h4>Mobile Accessories
+              <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+              <ul class="featured">
+                <li class="_1KCOnI _3ZgIXy"><a title="Mobile Cases" href="/mobile-accessories/cases-and-covers/pr?sid=tyy,4mr,q2u&amp;otracker=nmenu_sub_Electronics_0_Mobile%20Cases">Mobile Cases
+                  <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Headphones &amp; Headsets" href="/headphones-store?otracker=nmenu_sub_Electronics_0_Headphones%20%26%20Headsets">Headphones &amp; Headsets
+                  <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Power Banks" href="/mobile-accessories/power-banks/pr?sid=tyy,4mr,fu6&amp;otracker=categorytree&amp;otracker=nmenu_sub_Electronics_0_Power%20Banks">Power Banks
+                  <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Screenguards" href="/mobile-accessories/screen-guards/pr?sid=tyy,4mr,lrv&amp;otracker=nmenu_sub_Electronics_0_Screenguards">Screenguards
+                  <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Memory Cards" href="/mobile-accessories/memory-cards-readers/memory-cards/pr?sid=tyy,4mr,zzf,7y7&amp;otracker=nmenu_sub_Electronics_0_Memory%20Cards">Memory Cards
+                  <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Smart Headphones" href="/wearable-smart-devices/smart-headphones/pr?sid=ajy,vam&amp;otracker=nmenu_sub_Electronics_0_Smart%20Headphones">Smart Headphones
+                  <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Mobile Cables" href="/mobile-accessories/cables/pr?sid=tyy,4mr,3nu&amp;otracker=nmenu_sub_Electronics_0_Mobile%20Cables">Mobile Cables
+                  <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Mobile Chargers" href="/mobile-accessories/chargers/pr?sid=tyy,4mr,tp2&amp;otracker=nmenu_sub_Electronics_0_Mobile%20Chargers">Mobile Chargers
+                  <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Mobile Holders" href="/mobile-accessories/mobile-holders/pr?sid=tyy,4mr,vnf&amp;marketplace=FLIPKART&amp;otracker=nmenu_sub_Electronics_0_Mobile%20Holders">Mobile Holders
+                  <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+                </a></li>
+                <li class="_1KCOnI _2BfSTw _1h5QLb _3ZgIXy"><a title="Smart Wearable Tech" href="/smart-wearables-store?otracker=nmenu_sub_Electronics_0_Smart%20Wearable%20Tech">Smart Wearable Tech
+                  <span class="nsslWl"></span>
+                  <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Smart Watches" href="/smartwatches-store?otracker=nmenu_sub_Electronics_0_Smart%20Watches">Smart Watches
+                  <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Smart Glasses (VR)" href="/wearable-smart-devices/smart-glasses/pr?sid=ajy%2Ctcy&amp;otracker=nmenu_sub_Electronics_0_Smart%20Glasses%20(VR)">Smart Glasses (VR)
+                  <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Smart Bands" href="/wearable-smart-devices/smart-bands/pr?sid=ajy%2Cq7p&amp;otracker=nmenu_sub_Electronics_0_Smart%20Bands">Smart Bands
+                  <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+                </a></li>
+                <li class="_1KCOnI _2BfSTw _1h5QLb _3ZgIXy"><a title="Health Care Appliances" href="/health-and-appliances-store?otracker=nmenu_sub_Electronics_0_Health%20Care%20Appliances">Health Care Appliances
+                  <span class="nsslWl"></span>
+                  <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Bp Monitors" href="/health-personal-care-appliances/health-care/health-care-devices/blood-pressure-monitors/pr?sid=zlw,nyl,bvv,kbk&amp;otracker=nmenu_sub_Electronics_0_Bp%20Monitors">Bp Monitors
+                  <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Weighing Scale" href="/beauty-and-personal-care/health-care/health-care-devices/weighing-scales/pr?sid=t06,nyl,bvv,o4o&amp;otracker=nmenu_sub_Electronics_0_Weighing%20Scale">Weighing Scale
+                  <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+                </a></li>
+             </ul>
+            </h4>
+          </div>
+          <div class="megamenudiv">
+            <h4>Laptops
+              <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+              <ul class="laptops">
+                <li class="_1KCOnI _3ZgIXy"><a title="Gaming Laptops" href="/gaming-laptops-store?otracker=nmenu_sub_Electronics_0_Gaming%20Laptops&amp;otracker=nmenu_sub_Electronics_0_Gaming%20Laptops">Gaming Laptops
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _2BfSTw _1h5QLb _3ZgIXy"><a title="Desktop PCs" href="/desktop-pc-store?otracker=nmenu_sub_Electronics_0_Desktop%20PCs">Desktop PCs
+                  <span class="nsslWl"></span>
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _2BfSTw _1h5QLb _3ZgIXy"><a title="Gaming &amp; Accessories" href="/gaming-store?otracker=nmenu_sub_Electronics_0_Gaming%20%26%20Accessories">Gaming &amp; Accessories
+                 <span class="nsslWl"></span>
+                 <span class="arrowp">
+                  <i class="fas fa-caret-right"></i>
+                </span>
+                </a></li>
+                <li class="_1KCOnI _2BfSTw _1h5QLb _3ZgIXy"><a title="Computer Accessories" href="/computer-accessories-store?otracker=nmenu_sub_Electronics_0_Computer%20Accessories">Computer Accessories
+                  <span class="nsslWl"></span>
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="External Hard Disks" href="/external-hard-disk-store?otracker=nmenu_sub_Electronics_0_External%20Hard%20Disks">External Hard Disks
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Pendrives" href="/computers/storage/pen-drives/pr?sid=6bo,jdy,uar&amp;otracker=nmenu_sub_Electronics_0_Pendrives">Pendrives
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Laptop Skins &amp; Decals" href="/laptop-accessories/laptop-skins-decals/pr?sid=6bo,ai3,zvm&amp;otracker=nmenu_sub_Electronics_0_Laptop%20Skins%20%26%20Decals">Laptop Skins &amp; Decals
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Laptop Bags" href="/laptop-accessories/laptop-bags/pr?sid=6bo%2Cai3%2Cqq9&amp;otracker=nmenu_sub_Electronics_0_Laptop%20Bags">Laptop Bags
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Mouse" href="/laptop-accessories/mouse/pr?sid=6bo,ai3,2ay&amp;otracker=nmenu_sub_Electronics_0_Mouse">Mouse
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _2BfSTw _1h5QLb _3ZgIXy"><a title="Computer Peripherals" href="/peripherals-store?otracker=nmenu_sub_Electronics_0_Computer%20Peripherals">Computer Peripherals
+                  <span class="nsslWl"></span>
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Printers &amp; Ink Cartridges" href="/printer-inks-store?otracker=nmenu_sub_Electronics_0_Printers%20%26%20Ink%20Cartridges">Printers &amp; Ink Cartridges
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Monitors" href="/monitors-store?otracker=nmenu_sub_Electronics_0_Monitors">Monitors
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _2BfSTw _1h5QLb _3ZgIXy"><a title="Tablets" href="/tablets-store?otracker=nmenu_sub_Electronics_0_Tablets">Tablets
+                  <span class="nsslWl"></span>
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Apple iPads" href="/tablets/~apple-ipads/pr?sid=tyy,hry&amp;otracker=nmenu_sub_Electronics_0_Apple%20iPads">Apple iPads
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+             </ul>
+            </h4>
+          </div>
+          <div class="megamenudiv">
+            <h4>Televisions
+              <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+              <ul>
+                <li class="_1KCOnI _2BfSTw _1h5QLb _3ZgIXy"><a title="Speakers" href="/audio-speaker-store?otracker=nmenu_sub_Electronics_0_Speakers">Speakers
+                  <span class="nsslWl"></span>
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Home Audio Speakers" href="/audio-video/speakers/pr?count=40&amp;otracker=categorytree&amp;p%5B%5D=facets.type%255B%255D%3DHome%2BAudio%2BSpeaker&amp;p%5B%5D=facets.type%255B%255D%3DLaptop%252FDesktop%2BSpeaker&amp;p%5B%5D=facets.type%255B%255D%3DSoundbar&amp;sid=0pm%2F0o7&amp;otracker=nmenu_sub_Electronics_0_Home%20Audio%20Speakers">Home Audio Speakers
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Home Theatres" href="/audio-video/speakers/pr?sid=0pm%2C0o7&amp;otracker=categorytree&amp;p%5B%5D=facets.type%255B%255D%3DHome%2BTheatre&amp;p%5B%5D=facets.type%255B%255D%3DTower%2BSpeaker&amp;p%5B%5D=facets.type%255B%255D%3DSoundbar&amp;p%5B%5D=facets.availability%255B%255D%3DExclude%2BOut%2Bof%2BStock&amp;otracker=nmenu_sub_Electronics_0_Home%20Theatres">Home Theatres
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Soundbars" href="/audio-video/speakers/pr?sid=0pm%2C0o7&amp;p%5B%5D=facets.type%255B%255D%3DSoundbar&amp;otracker=categorytree&amp;p%5B%5D=facets.serviceability%5B%5D%3Dtrue&amp;p%5B%5D=facets.fulfilled_by%255B%255D%3DFlipkart%2BAssured&amp;otracker=nmenu_sub_Electronics_0_Soundbars">Soundbars
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Bluetooth Speakers" href="/audio-video/speakers/pr?sid=0pm%2C0o7&amp;otracker=categorytree&amp;p%5B%5D=facets.features%255B%255D%3DBluetooth&amp;otracker=nmenu_sub_Electronics_0_Bluetooth%20Speakers">Bluetooth Speakers
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="DTH Set Top Box" href="/home-entertainment/dth/pr?count=40&amp;otracker=categorytree&amp;p%5B%5D=facets.availability%255B%255D%3DExclude%2BOut%2Bof%2BStock&amp;sid=ckf%2F9wn&amp;otracker=nmenu_sub_Electronics_0_DTH%20Set%20Top%20Box">DTH Set Top Box
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _2BfSTw _1h5QLb _3ZgIXy"><a title="Smart Home Automation" href="/smart-home-automation-store?otracker=nmenu_sub_Electronics_0_Smart%20Home%20Automation">Smart Home Automation
+                  <span class="nsslWl"></span>
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Google Nest" href="/google-nest-mini-store?otracker=nmenu_sub_Electronics_0_Google%20Nest">Google Nest
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _2BfSTw _1h5QLb _3ZgIXy"><a title="Camera" href="/camera-clp-store?otracker=nmenu_sub_Electronics_0_Camera">Camera
+                  <span class="nsslWl"></span>
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="DSLR &amp; Mirrorless" href="/cameras/dslr~type/pr?sid=jek%2Cp31&amp;otracker=nmenu_sub_Electronics_0_DSLR%20%26%20Mirrorless">DSLR &amp; Mirrorless
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Compact &amp; Bridge Cameras" href="/cameras/point-shoot~type/pr?sid=jek%2Cp31&amp;otracker=nmenu_sub_Electronics_0_Compact%20%26%20Bridge%20Cameras">Compact &amp; Bridge Cameras
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Sports &amp; Action" href="/cameras/sports-action/pr?count=40&amp;sid=jek%2Fp31%2Fs3q&amp;otracker=nmenu_sub_Electronics_0_Sports%20%26%20Action">Sports &amp; Action
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _2BfSTw _1h5QLb _3ZgIXy"><a title="Camera Accessories" href="/cameras-accessories-store?otracker=nmenu_sub_Electronics_0_Camera%20Accessories">Camera Accessories
+                  <span class="nsslWl"></span>
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Lens" href="/camera-accessories/camera-lenses/pr?uniqueBstoreparam1=val1&amp;sid=jek%2C6l2%2Ce9y&amp;otracker=nmenu_sub_Electronics_0_Lens">Lens
+                 <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Tripods" href="/camera-accessories/tripods/pr?count=40&amp;otracker=categorytree&amp;p%5B%5D=sort%3Dpopularity&amp;sid=jek%2F6l2%2Fce6&amp;otracker=nmenu_sub_Electronics_0_Tripods">Tripods
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _2BfSTw _1h5QLb _3ZgIXy"><a title="Network Components" href="/computers/network-components/pr?sid=6bo,70k&amp;otracker=categorytree&amp;otracker=nmenu_sub_Electronics_0_Network%20Components">Network Components
+                  <span class="nsslWl"></span>
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Routers" href="/computers/network-components/routers/pr?sid=6bo%2F70k%2F2a2&amp;otracker=nmenu_sub_Electronics_0_Routers">Routers
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+             </ul>
+            </h4>
+          </div>
+          <div class="megamenudiv">
+            <h4>Featured
+              <span class="arrowp"><i class="fas fa-caret-right"></i></span>
+              <ul class="featured">
+                <li class="_1KCOnI _3ZgIXy"><a title="Google Assistant Store" href="/google-assistant-122019-store?otracker=nmenu_sub_Electronics_0_Google%20Assistant%20Store">Google Assistant Store
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Laptops on Buyback Guarantee" href="/laptops/~buyback-guarantee-on-laptops-/pr?sid=6bo%2Cb5g&amp;otracker=nmenu_sub_Electronics_0_Laptops%20on%20Buyback%20Guarantee">Laptops on Buyback Guarantee
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Flipkart SmartBuy" href="/flipkart-smartbuy-store?otracker=nmenu_sub_Electronics_0_Flipkart%20SmartBuy">Flipkart SmartBuy
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Li-Polymer Power Banks" href="/lithium-polymer-power-banks-store?otracker=nmenu_sub_Electronics_0_Li-Polymer%20Power%20Banks">Li-Polymer Power Banks
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Sony PS4 Pro &amp; Slim" href="/games/~sony-play-station/pr?facets.availability=Exclude%20Out%20of%20Stock&amp;sid=4rr%2Ctg9&amp;p%5B%5D=facets.filter_standard%255B%255D%3D1&amp;facets.availability[]=Exclude+Out+of+Stock&amp;otracker=nmenu_sub_Electronics_0_Sony%20PS4%20Pro%20%26%20Slim">Sony PS4 Pro &amp; Slim
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Apple Products" href="/apple-products-store?otracker=nmenu_sub_Electronics_0_Apple%20Products">Apple Products
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Microsoft Store" href="/microsoft-store?otracker=nmenu_sub_Electronics_0_Microsoft%20Store">Microsoft Store
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span></a></li>
+
+                <li class="_1KCOnI _3ZgIXy"><a title="Lenovo Phab Series" href="/mobiles-accessories/~lenovo-phab-series1/pr?sid=tyy&amp;otracker=nmenu_sub_Electronics_0_Lenovo%20Phab%20Series">Lenovo Phab Series
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="JBL Speakers" href="/all/audio-video/jbl~brand/pr?otracker=categorytree&amp;p%5B%5D=facets.availability%255B%255D%3DExclude%2BOut%2Bof%2BStock&amp;p%5B%5D=facets.brand%255B%255D%3DJBL&amp;sid=all%2F0pm&amp;otracker=nmenu_sub_Electronics_0_JBL%20Speakers">JBL Speakers
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Smartphones On Buyback Guarantee" href="/buyback-guarantee-store?otracker=nmenu_sub_Electronics_0_Smartphones%20On%20Buyback%20Guarantee">Smartphones On Buyback Guarantee
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Philips" href="/health-personal-care-appliances/pr?count=40&amp;otracker=categorytree&amp;p%5B%5D=facets.brand%255B%255D%3DPhilips&amp;p%5B%5D=facets.fulfilled_by%255B%255D%3DFlipkart%2BAssured&amp;sid=zlw&amp;otracker=nmenu_sub_Electronics_0_Philips">Philips
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Dr. Morepen" href="/search?as=off&amp;as-show=on&amp;count=40&amp;otracker=start&amp;p%5B%5D=facets.brand%255B%255D%3DDr.%2BMorepen&amp;q=bp+monitor&amp;sid=zlw&amp;otracker=nmenu_sub_Electronics_0_Dr.%20Morepen">Dr. Morepen
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Complete Mobile Protection" href="/mobile-complete-protection-bbd-store?otracker=nmenu_sub_Electronics_0_Complete%20Mobile%20Protection">Complete Mobile Protection
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Mobiles No Cost EMI" href="/no-cost-emi-mobiles-store?otracker=nmenu_sub_Electronics_0_Mobiles%20No%20Cost%20EMI">Mobiles No Cost EMI
+                  <span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>
+                </a></li>
+                <li class="_1KCOnI _3ZgIXy"><a title="Huawei Watch Gt 2e Smart Watch" href="/huawei-watch-gt-2e-smartwatch-store?otracker=nmenu_sub_Electronics_0_Huawei%20Watch%20Gt%202e%20Smart%20Watch">Huawei Watch Gt 2e Smart Watch
+                  <!---<span class="arrowp">
+                    <i class="fas fa-caret-right"></i>
+                  </span>---> 
+               </a></li>
+             </ul>
+            </h4>
+          </div>  
+        </section>
+        <!------mega dropdown menu starts here-->
+        </li>
+        <li class="listitem"><a href="" class="navlinks">Tv & Applications<svg width="4.7" height="8"viewBox="0 0 16 27"xmlns="http://www.w3.org/2000/svg" class="_34Yjv1"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"fill="#fff"class="_14jSvk"></path></svg></a></li>
+        <li class="listitem"><a href="" class="navlinks">Men<svg width="4.7" height="8"viewBox="0 0 16 27"xmlns="http://www.w3.org/2000/svg" class="_34Yjv1"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"fill="#fff"class="_14jSvk"></path></svg></a></li>
+        <li class="listitem"><a href="" class="navlinks">Women<svg width="4.7" height="8"viewBox="0 0 16 27"xmlns="http://www.w3.org/2000/svg" class="_34Yjv1"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"fill="#fff"class="_14jSvk"></path></svg></a></li>
+        <li class="listitem"><a href="" class="navlinks">Babys & Kids<svg width="4.7" height="8"viewBox="0 0 16 27"xmlns="http://www.w3.org/2000/svg" class="_34Yjv1"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"fill="#fff"class="_14jSvk"></path></svg></a></li>
+        <li class="listitem"><a href="" class="navlinks">Home & Furniture<svg width="4.7" height="8"viewBox="0 0 16 27"xmlns="http://www.w3.org/2000/svg" class="_34Yjv1"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"fill="#fff"class="_14jSvk"></path></svg></a></li>
+        <li class="listitem"><a href="" class="navlinks">Sports,Books & More<svg width="4.7" height="8"viewBox="0 0 16 27"xmlns="http://www.w3.org/2000/svg" class="_34Yjv1"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"fill="#fff"class="_14jSvk"></path></svg></a></li>
+        <li class="listitem"><a href="" class="navlinks">Flights</a></li>
+        <li class="listitem"><a href="" class="navlinks">Offer Zone</a></li>
+      </ul>
+    </nav>
     </article>
   </section>
-  <!----flipkart header block ends here-->
-</body>
+  <!----flipkart firstblock starts here -->
+  
+    <!-----slider section starts here-->
+    <section id="sliderBlock">
+      <article>
+        <div class="CSSgal">
+          <!-- Don't wrap targets in parent -->
+          <s id="s1"></s>
+          <s id="s2"></s>
+          <s id="s3"></s>
+          <s id="s4"></s>
 
-</html>
+          <div class="slider">
+            <div>
+              <img src="./images/s6.png" alt="slider1" />
+            </div>
+            <!-----slider1-->
+            <div>
+              <img src="./images/s5.jpg" alt="slider2" />
+            </div>
+            <!---slider2-->
+            <div>
+              <img src="./images/s4.jpg" alt="slider3" />
+            </div>
+            <!----slider3-->
+            <div>
+              <img src="./images/s3.jpg" alt="slider4" />
+            </div>
+            <!-- Slider4 -->
+            <div>
+              <img src="./images/s2.jpg" alt="slider5" />
+            </div>
+            <!----slider5-->
+
+            <div>
+              <img src="./images/s1.jpg" alt="slider6" />
+            </div>
+            <!----slider6-->
+          </div>
+
+          <div class="prevNext">
+            <div>
+              <a href="#s4"
+                ><svg
+                  width="14.6"
+                  height="27"
+                  viewBox="0 0 16 27"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class=""
+                >
+                  <path
+                    d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"
+                    fill="#fff"
+                    class="_3Zc0XY"
+                  ></path></svg></a
+              ><a href="#s2"
+                ><svg
+                  width="14.6"
+                  height="27"
+                  viewBox="0 0 16 27"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="_2gp_O1"
+                >
+                  <path
+                    d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"
+                    fill="#fff"
+                    class="_3Zc0XY"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div>
+              <a href="#s1">
+                <svg
+                  width="14.6"
+                  height="27"
+                  viewBox="0 0 16 27"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class=""
+                >
+                  <path
+                    d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"
+                    fill="#fff"
+                    class="_3Zc0XY"
+                  ></path>
+                </svg> </a
+              ><a href="#s3">
+                <svg
+                  width="14.6"
+                  height="27"
+                  viewBox="0 0 16 27"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="_2gp_O1"
+                >
+                  <path
+                    d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"
+                    fill="#fff"
+                    class="_3Zc0XY"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div>
+              <a href="#s2">
+                <svg
+                  width="14.6"
+                  height="27"
+                  viewBox="0 0 16 27"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class=""
+                >
+                  <path
+                    d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"
+                    fill="#fff"
+                    class="_3Zc0XY"
+                  ></path>
+                </svg> </a
+              ><a href="#s4">
+                <svg
+                  width="14.6"
+                  height="27"
+                  viewBox="0 0 16 27"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="_2gp_O1"
+                >
+                  <path
+                    d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"
+                    fill="#fff"
+                    class="_3Zc0XY"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div>
+              <a href="#s3">
+                <svg
+                  width="14.6"
+                  height="27"
+                  viewBox="0 0 16 27"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class=""
+                >
+                  <path
+                    d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"
+                    fill="#fff"
+                    class="_3Zc0XY"
+                  ></path>
+                </svg> </a
+              ><a href="#s1">
+                <svg
+                  width="14.6"
+                  height="27"
+                  viewBox="0 0 16 27"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="_2gp_O1"
+                >
+                  <path
+                    d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"
+                    fill="#fff"
+                    class="_3Zc0XY"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!----slider section ends here-->
+  <!----flipkart secondblock starts here -->
+       <section id="secondblock">
+         <article>
+           <header>
+             <nav class="secondblocknav">
+               <div class="leftscenario">
+                 <h1>Fashion Top Deals</h1>
+                </div>
+               <div class="rightbutton">
+                 <button>VIEW ALL</button>
+               </div>
+             </nav>
+             <hr>
+           </header>
+           <main class="imgmain">
+             <img src="./images/girl1.jpeg" alt="girl1" />
+             <img src="./images/bshoe.jpeg" alt="bshoe" />
+             <img src="./images/shoe.jpeg" alt="shoe" />
+             <img src="./images/watch.jpg" alt="watch" />
+             <img src="./images/girl2.jpeg" alt="girl2" />
+             <img src="./images/children.jpg" alt="children" />
+             <img src="./images/girl3.jpeg" alt="girl3">
+           </main>
+           <footer class="footerimg">
+             <div class="imgdia">
+               <header><h4>Kurtas & kurtis</h4></header>
+               <main><h5>Min 50% off</h5></main>
+               <footer><h6>A-Line, Anarkali & more</h6></footer>
+             </div>
+             <div class="imgdib">
+               <header><h4>Puma, FILA, Lotto...</h4></header>
+               <main><h5>Min. 40% Off</h5></main>
+               <footer><h6>Sports Shoes & more</h6></footer>
+             </div>
+             <div class="imgdic">
+               <header><h4>Red Chief, Bata, Lee Cooper...</h4></header>
+               <main><h5>Min. 40% Off</h5></main>
+               <footer><h6>Formal, Casual Shoes...</h6></footer>
+             </div>
+             <div class="imgdid">
+               <header><h4>Casio, fastrack & more</h4></header>
+               <main><h5>20 - 60% Off</h5></main>
+               <footer><h6>Men & Women Watches</h6></footer>
+             </div>
+             <div class="imgdie">
+              <header><h4>Lehenga Cholis</h4></header>
+              <main><h5>Min 60% off</h5></main>
+              <footer><h6>Embellished & more</h6></footer>
+            </div>
+             <div class="imgdig">
+               <header><h4>Kid's Clothing</h4></header>
+               <main><h5>FROM ₹99 ONLY</h5></main>
+               <footer><h6>Gini & Jony, Allen Solly,UCB...</h6></footer>
+             </div>
+             <div class="imgdih">
+               <header><h4>Sarees</h4></header>
+               <main><h5>Min 60% off</h5></main>
+               <footer><h6>Saara, Divastri & more</h6></footer>
+             </div>
+           </footer>
+         </article>
+       </section>
+<!----flipkart secondblock ends here -->
+
+<!----flipkart thirdblock starts here -->
+<section id="thirdblock">
+  <article>
+    <div class="imgpp"><img src="./images/np1.jpg" alt="blockimage"></div>
+  </article>
+</section>
+<!----flipkart thirdblock ends here -->
+
+<!----flipkart fourthblock starts here -->
+<section id="fourthblock">
+  <article>
+    <div class="imgpq">
+      <img src="./images/pin2.png" alt="11">
+      <img src="./images/pin3.png" alt="12">
+      <img src="./images/pin4.png" alt="13">
+    </div>
+  </article>
+</section>
+<!----flipkart fourthlock ends here -->
+
+<!----flipkart fifthblock starts here -->
+<section id="fifthblock">
+  <article>
+    <div><img src="./images/pin1.jpg" alt="111"></div>
+  </article>
+</section>
+<!----flipkart fifthblock ends here -->
+
+<!----flipkart sixthblock starts here -->
+<section id="secondblock">
+  <article>
+    <header>
+      <nav class="secondblocknav">
+        <div class="leftscenario">
+          <h1>Fashion Top Deals</h1>
+         </div>
+        <div class="rightbutton">
+          <button>VIEW ALL</button>
+        </div>
+      </nav>
+      <hr>
+    </header>
+    <main class="imgmain1">
+      <img src="./images/roadster shirt.jpeg" alt="girl1" />
+      <img src="./images/top rated ethinic wear.jpeg" alt="bshoe" />
+      <img src="./images/tracks.jpeg" alt="shoe" />
+      <img src="./images/newly launched.jpeg" alt="watch" />
+      <img src="./images/gowns.jpeg" alt="girl2" />
+      <img src="./images/doubleshirts.jpeg" alt="children" />
+      <img src="./images/tshirt.jpeg" alt="girl3">
+    </main>
+    <footer class="footerimg">
+      <div class="imgdi1  ">
+        <header><h4>Roadster Shirt</h4></header>
+        <main><h5>Min 50% off</h5></main>
+        <footer><h6>A-Line & more</h6></footer>
+      </div>
+      <div class="imgdi2">
+        <header><h4>Top Rated Ethinic Wear</h4></header>
+        <main><h5>Min. 40% Off</h5></main>
+        <footer><h6>Colors Available</h6></footer>
+      </div>
+      <div class="imgdi3">
+        <header><h4>Track Phants...</h4></header>
+        <main><h5>Min. 40% Off</h5></main>
+        <footer><h6>Formal, Casual Phants...</h6></footer>
+      </div>
+      <div class="imgdi4">
+        <header><h4>Newly Launched</h4></header>
+        <main><h5>20 - 60% Off</h5></main>
+        <footer><h6>For Women</h6></footer>
+      </div>
+      <div class="imgdi5">
+       <header><h4>Gowns</h4></header>
+       <main><h5>Min 60% off</h5></main>
+       <footer><h6>Embellished & more</h6></footer>
+     </div>
+      <div class="imgdi6">
+        <header><h4>Double Shits...</h4></header>
+        <main><h5>FROM ₹99 ONLY</h5></main>
+        <footer><h6>Gini & Jony, Allen Solly,UCB...</h6></footer>
+      </div>
+      <div class="imgdi7">
+        <header><h4>T-shirts</h4></header>
+        <main><h5>Min 60% off</h5></main>
+        <footer><h6>All brands...</h6></footer>
+      </div>
+    </footer>
+  </article>
+</section>
+
+<!----flipkart sixthblock ends here -->
+
+<!----flipkart seventhblock starts here -->
+<section id="seventhblock">
+  <article>
+    <div>
+      <img src="./images/lapi.png" alt="lapi">
+      <img src="./images/lapi1.jpg" alt="lapi">
+    </div>
+  </article>
+</section>
+<!----flipkart seventhblock ends here -->
+
+<!------FLIPKARKT TENTHBLOCK ENDS HERE------>
+<section id="finalblock">
+  <article>
+      <header>
+       <div>
+           <h4>Covid-Delivery Cites</h4>
+           <a href="https://www.redbus.in/bus-tickets/hyderabad-to-bangalore" target="blank"><h5>hyderabad cities..</h5></a>
+           <a href="https://www.redbus.in/bus-tickets/bangalore-to-chennai" target="blank"><h5>bangalore cities..</h5></a>
+           <a href="https://www.redbus.in/bus-tickets/pune-to-bangalore" target="blank"><h5>pune cities..</h5></a>
+           <a href="https://www.redbus.in/bus-tickets/mumbai-to-bangalore" target="blank"><h5>mumbai Cities..</h5></a>
+           <a href="https://www.redbus.in/bus-tickets/routes-directory" target="blank"><h5>more<sup>></sup></h5></a>
+       </div>
+       <div>
+           <h4>Top Cities Delivery</h4>
+           <a href="https://www.redbus.in/buses/hyderabad-bus-tickets" target="blank"><h5>hyderabad cities..</h5></a>
+           <a href="https://www.redbus.in/buses/bangalore-bus-tickets" target="blank"><h5>bangalore cities..</h5></a>
+           <a href="https://www.redbus.in/buses/chennai-bus-tickets" target="blank"><h5>pune cities..</h5></a>
+           <a href="https://www.redbus.in/buses/pune-bus-tickets" target="blank"><h5>mumbai Cities..</h5></a>
+           <a href="https://www.redbus.in/buses/cities-directory" target="blank"><h5>more<sup>></sup></h5></a>
+
+       </div>
+       <div>
+           <h4>Courier office</h4>
+           <a href="https://www.redbus.in/online-booking/apsrtc" target="blank"><h5>blue dart</h5></a>
+           <a href="https://www.redbus.in/online-booking/msrtc" target="blank"><h5>ekart</h5></a>
+           <a href="https://www.redbus.in/online-booking/hrtc" target="blank"><h5>st oppi</h5></a>
+           <a href="https://www.redbus.in/online-booking/upsrtc" target="blank"><h5>DXTC</h5></a>
+           <a href="https://www.redbus.in/online-booking/rtc-directory" target="blank"><h5>more<sup>></sup></h5></a>    
+       </div>
+       <div>
+           <h4>Other</h4>
+           <a href="https://www.redbus.in/online-booking/gsrtc" target="blank"><h5>gkart</h5></a>
+           <a href="https://www.redbus.in/online-booking/rsrtc"target="blank"><h5>rkart</h5></a>
+           <a href="https://www.redbus.in/online-booking/ktcl" target="blank"><h5>fkart</h5></a>
+           <a href="https://www.redbus.in/online-booking/pepsu" target="blank"><h5>lkart</h5></a>
+           <a href="https://www.redbus.in/online-booking/rtc-directory" target="blank"><h5>more<sup>></sup></h5></a>    
+       </div>
+       <div>
+           <h4>Medical Speed Delivery</h4>
+           <a href="https://www.redbus.in/tempo-traveller/bangalore" target="blank"><h5>bangalore & sourrunding 500km</h5></a>
+           <a href="https://www.redbus.in/tempo-traveller/chennai" target="blank"><h5>chennai & sourrunding 500km</h5></a>
+           <a href="https://www.redbus.in/tempo-traveller/mumbai" target="blank"><h5> mumbai & sourrunding 500km</h5></a>
+           <a href="https://www.redbus.in/tempo-traveller/hyderabad" target="blank"><h5>yderabad & sourrunding 500km</h5></a>
+           <a href="https://www.redbus.in/tempo-traveller/ahmedabad" target="blank"><h5>ahamedabad & it's cities</h5></a>
+       </div>
+         </header>
+         <hr />
+         <main id="finalblockfooter">
+             <h4>Top Sales</h4>
+             <P>
+              <a href="https://www.redbus.in/travels/srs-travels-srs.aspx">MI mobiles</a>
+              <a href="https://www.redbus.in/travels/evacay-bus.aspx ">OPPO mobiles</a>
+              <a href="https://www.redbus.in/travels/kallada-travels-kallada.aspx ">HAUWAI mobiles</a>
+              <a href="https://www.redbus.in/travels/kpn-travels-kpn.aspx ">Lenovo mobiles</a>
+              <a href="https://www.redbus.in/travels/orange-travels-orange.aspx ">SAMSUNG mobiles</a>
+              <a href="https://www.redbus.in/travels/parveen-travels.aspx ">APPLE mobiles</a>    
+              <a href="https://www.redbus.in/travels/rajdhani-express.aspx ">MOTO mobiles</a>
+              <a href="https://www.redbus.in/travels/vrl-travels-vrl.aspx">NOKIA mobiles</a>
+              <a href="https://www.redbus.in/travels/chartered-bus.aspx">VIVO mobiles</a>
+              <a href="https://www.redbus.in/travels/bengal-tiger.aspx">POCO mobiles</a>
+              <a href="https://www.redbus.in/travels/srm-travels-srm.aspx">ZIONEE mobiles</a>
+              <a href="https://www.redbus.in/travels/infant-jesus.aspx">ZENFONE mobiles</a>
+              <a href="https://www.redbus.in/travels/patel-travels-lufthanza-9940.aspx">ASUS mobiles</a>
+              <a href="https://www.redbus.in/travels/jbt-travels.aspx">SAMSUNG laptops</a>
+              <a href="https://www.redbus.in/travels/shatabdi-travels-1.aspx">SONY laptops</a>
+              <a href="https://www.redbus.in/travels/eagle-travels.aspx">LENOVO laptops</a>
+              <a href="https://www.redbus.in/travels/kanker-roadways-10172.aspx">ACER laptops</a>
+              <a href="https://www.redbus.in/travels/komitla.aspx">ASUS laptops</a>
+              <a href="https://www.redbus.in/travels/sri-krishna-travels.aspx">ZENBOOK laptops</a>
+              <a href="https://www.redbus.in/travels/humsafar-travels-9807.aspx">DELL laptops</a>
+              <a href="https://www.redbus.in/travels/mahasagar-travels-mahasagar.aspx">HP laptops</a>
+              <a href="https://www.redbus.in/travels/raj-express-1.aspx">INTEL laptops</a>
+              <a href="https://www.redbus.in/travels/sharma-travels.aspx">MAC BOOK</a>
+              <a href="https://www.redbus.in/travels/shrinath-travels-agency-online.aspx">MI laptops</a>
+              <a href="https://www.redbus.in/travels/universal-travels.aspx">MICROSOFT laptops</a>
+              <a href="https://www.redbus.in/travels/verma-travels.aspx">INSPIRON laptops</a>
+              <a href="https://www.redbus.in/travels/gujarat-travels.aspx">SAMSUNG Tv</a>
+              <a href="https://www.redbus.in/travels/madurai-radha-travels.aspx">ONIDA Tv</a>
+              <a href="https://www.redbus.in/travels/patel-tours-and-travels.aspx">SONY Tv</a>
+              <a href="https://www.redbus.in/travels/paulo-travels.aspx">MI Tv</a>
+              <a href="https://www.redbus.in/travels/royal-travels.aspx">LG Tv</a>
+              <a href="https://www.redbus.in/travels/amarnath-travels-9984.aspx">HAIWER Tv</a>
+              <a href="https://www.redbus.in/travels/vaibhav-travels.aspx">TCL Tv</a>
+              <a href="https://www.redbus.in/travels/ganesh-travels-2.aspx">KODAK Tv</a>
+              <a href="https://www.redbus.in/travels/jabbar-travels.aspx">ONEPLUS Tv</a>
+              <a href="https://www.redbus.in/travels/jain-travels.aspx">PHILIPS Tv</a>
+              <a href="https://www.redbus.in/travels/manish-travels.aspx">ADDIDAS shoes</a>
+              <a href="https://www.redbus.in/travels/pradhan.aspx">REEBOOK shoes</a>
+              <a href="https://www.redbus.in/travels/ybm-travels.aspx">PUMA shoes</a>
+              <a href="https://www.redbus.in/travels/hebron-transports.aspx">NIKE shoes</a>
+              <a href="https://www.redbus.in/travels/mahalaxmi-travels-mahalaxmi.aspx">SPARX shoes</a>
+              <a href="https://www.redbus.in/travels/mr-travels.aspx">BATA shoes</a>
+              <a href="https://www.redbus.in/travels/vivegam-travels.aspx">RED CHIEF shoes</a>
+              <a href="https://www.redbus.in/travels/vst.aspx">REDTAPE shoes</a>
+              <a href="https://www.redbus.in/travels/kaleswari-travels.aspx">LEE COOPER shoes</a>
+              <a href="https://www.redbus.in/travels/mahendra-travels-10027.aspx">FILA shoes</a>
+              <a href="https://www.redbus.in/travels/neeta-tours-and-travels.aspx">LIBERTY shoes</a>
+              <a href="https://www.redbus.in/travels/yamani-travels.aspx">CLARKS shoes</a>
+              <a href="https://www.redbus.in/travels/arthi-travels.aspx">FLITE shoes</a>   
+             </P>
+           </main>
+           <footer id="dddd">
+               <a href="/travels/operators-directory.aspx" class="more-link site-links" target="_blank">GRAB IT SOON &gt;</a>
+           </footer>
+  </article>
+</section>
+<!------FLIPKARKT TENTHBLOCK ENDS HERE------>
+<!------FLIPKARKT NINTHBLOCK STARTS HERE----
+<section class="ninthblock">
+<div>
+  <div class="_2NHqR1 row">
+     <div class="_3qd5C5">
+        <div class="_18wTSA">ABOUT</div>
+        <a href="/helpcentre?otracker=undefined_footer_navlinks" class="_287FRX">Contact Us</a><a href="/about-us?otracker=undefined_footer_navlinks" class="_287FRX">About Us</a><a href="https://www.flipkartcareers.com/?otracker=undefined_footer_navlinks" class="_287FRX">Careers</a><a href="http://stories.flipkart.com/?otracker=undefined_footer_navlinks" class="_287FRX">Flipkart Stories</a><a href="/s/press?otracker=undefined_footer_navlinks" class="_287FRX">Press</a>
+     </div>
+     <div class="_3qd5C5">
+        <div class="_18wTSA">HELP</div>
+        <a href="/pages/payments" class="_287FRX">Payments</a><a href="/pages/shipping" class="_287FRX">Shipping</a><a href="/helpcentre?catalog=55c9c6edb000002e002c1701&amp;view=CATALOG" class="_287FRX">Cancellation &amp; Returns</a><a href="/helpcentre?catalog=55c9c8e2b0000023002c1702&amp;view=CATALOG" class="_287FRX">FAQ</a><a href="https://seller.flipkart.com/fiv?otracker=undefined_footer_navlinks" class="_287FRX">Report Infringement</a>
+     </div>
+     <div class="_3qd5C5">
+        <div class="_18wTSA">POLICY</div>
+        <a href="/pages/returnpolicy?otracker=undefined_footer_navlinks" class="_287FRX">Return Policy</a><a href="/pages/terms?otracker=undefined_footer_navlinks" class="_287FRX">Terms Of Use</a><a href="/pages/paymentsecurity?otracker=undefined_footer_navlinks" class="_287FRX">Security</a><a href="/pages/privacypolicy?otracker=undefined_footer_navlinks" class="_287FRX">Privacy</a><a href="/sitemap?otracker=undefined_footer_navlinks" class="_287FRX">Sitemap</a><a href="/pages/ewaste-compliance-tnc?otracker=undefined_footer_navlinks" class="_287FRX">EPR Compliance</a>
+     </div>
+     <div class="_3qd5C5">
+        <div class="_18wTSA">SOCIAL</div>
+        <a href="https://www.facebook.com/flipkart" class="_287FRX">Facebook</a><a href="https://www.twitter.com/flipkart" class="_287FRX">Twitter</a><a href="https://www.youtube.com/flipkart" class="_287FRX">YouTube</a>
+     </div>
+     <div class="_3qd5C5 address">
+        <div class="_38DIp6">
+           <div class="_18wTSA"><span>Mail Us:</span></div>
+           <div class="_2V3TtE">
+              <div class="_3Lv0nZ">
+                 <div class="_3aS5mM _2V3TtE">
+                    <p>Flipkart Internet Private Limited, </p>
+                    <p> Buildings Alyssa, Begonia &amp; </p>
+                    <p> Clove Embassy Tech Village, </p>
+                    <p> Outer Ring Road, Devarabeesanahalli Village, </p>
+                    <p> Bengaluru, 560103, </p>
+                    <p> Karnataka, India</p>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+     <div class="_3qd5C5 address">
+        <div class="m6ABEi">
+           <div class="_18wTSA"><span>Registered Office Address:</span></div>
+           <div class="_2V3TtE">
+              <div class="_3Lv0nZ">
+                 <div class="_3aS5mM _2V3TtE">
+                    <p>Flipkart Internet Private Limited, </p>
+                    <p> Buildings Alyssa, Begonia &amp; </p>
+                    <p> Clove Embassy Tech Village, </p>
+                    <p> Outer Ring Road, Devarabeesanahalli Village, </p>
+                    <p> Bengaluru, 560103, </p>
+                    <p> Karnataka, India </p>
+                    <p> CIN : U51109KA2012PTC066107 </p>
+                    <p> Telephone: <a href="tel:18002089898">1800 208 9898</a></p>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+  <div>
+     <div class="_1DXv5h">
+        <div><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE2IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTJoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTUuOTMgNS42MTRoLTIuOTQ4VjQuMTRjMC0uODE4LS42NTUtMS40NzMtMS40NzMtMS40NzNIOC41NmMtLjgxNyAwLTEuNDczLjY1NS0xLjQ3MyAxLjQ3M3YxLjQ3NEg0LjE0Yy0uODE4IDAtMS40NjYuNjU2LTEuNDY2IDEuNDc0bC0uMDA3IDguMTA1YzAgLjgxOC42NTUgMS40NzQgMS40NzMgMS40NzRoMTEuNzljLjgxOCAwIDEuNDc0LS42NTYgMS40NzQtMS40NzRWNy4wODhjMC0uODE4LS42NTYtMS40NzQtMS40NzQtMS40NzR6bS00LjQyMSAwSDguNTZWNC4xNGgyLjk0OHYxLjQ3NHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yIC0yKSIvPgogICAgPC9nPgo8L3N2Zz4K"><a href="https://seller.flipkart.com/?utm_source=fkwebsite&amp;utm_medium=websitedirect"><span class="_1Dwg_s">Sell On Flipkart</span></a></div>
+        <div><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0zLTNoMjB2MjBILTN6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTAuNDkyIDNDNi4zNTMgMyAzIDYuMzYgMyAxMC41YzAgNC4xNCAzLjM1MyA3LjUgNy40OTIgNy41QzE0LjY0IDE4IDE4IDE0LjY0IDE4IDEwLjUgMTggNi4zNiAxNC42NCAzIDEwLjQ5MiAzem0zLjE4IDEyTDEwLjUgMTMuMDg4IDcuMzI3IDE1bC44NC0zLjYwN0w1LjM3IDguOTdsMy42OS0uMzE1TDEwLjUgNS4yNWwxLjQ0IDMuMzk4IDMuNjkuMzE1LTIuNzk4IDIuNDIyLjg0IDMuNjE1eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo="><a href="https://brands.flipkart.com"><span class="_1Dwg_s">Advertise</span></a></div>
+        <div><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDE4IDE3Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0xLTFoMjB2MjBILTF6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTYuNjY3IDVIMTQuODVjLjA5Mi0uMjU4LjE1LS41NDIuMTUtLjgzM2EyLjQ5NyAyLjQ5NyAwIDAgMC00LjU4My0xLjM3NUwxMCAzLjM1bC0uNDE3LS41NjdBMi41MSAyLjUxIDAgMCAwIDcuNSAxLjY2N2EyLjQ5NyAyLjQ5NyAwIDAgMC0yLjUgMi41YzAgLjI5MS4wNTguNTc1LjE1LjgzM0gzLjMzM2MtLjkyNSAwLTEuNjU4Ljc0Mi0xLjY1OCAxLjY2N2wtLjAwOCA5LjE2NkExLjY2IDEuNjYgMCAwIDAgMy4zMzMgMTcuNWgxMy4zMzRhMS42NiAxLjY2IDAgMCAwIDEuNjY2LTEuNjY3VjYuNjY3QTEuNjYgMS42NiAwIDAgMCAxNi42NjcgNXptMCA2LjY2N0gzLjMzM3YtNWg0LjIzNEw1LjgzMyA5LjAyNWwxLjM1Ljk3NSAxLjk4NC0yLjdMMTAgNi4xNjdsLjgzMyAxLjEzMyAxLjk4NCAyLjcgMS4zNS0uOTc1LTEuNzM0LTIuMzU4aDQuMjM0djV6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMSAtMSkiLz4KICAgIDwvZz4KPC9zdmc+Cg=="><a href="/account/giftcard?otracker=undefined_footer_footer_navlinks"><span class="_1Dwg_s">Gift Cards</span></a></div>
+        <div><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTNoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNOS41IDNDNS4zNiAzIDIgNi4zNiAyIDEwLjUgMiAxNC42NCA1LjM2IDE4IDkuNSAxOGM0LjE0IDAgNy41LTMuMzYgNy41LTcuNUMxNyA2LjM2IDEzLjY0IDMgOS41IDN6bS43NSAxMi43NWgtMS41di0xLjVoMS41djEuNXptMS41NTMtNS44MTNsLS42NzYuNjljLS41NC41NDgtLjg3Ny45OTgtLjg3NyAyLjEyM2gtMS41di0uMzc1YzAtLjgyNS4zMzgtMS41NzUuODc3LTIuMTIzbC45My0uOTQ1Yy4yNzgtLjI3LjQ0My0uNjQ1LjQ0My0xLjA1NyAwLS44MjUtLjY3NS0xLjUtMS41LTEuNVM4IDcuNDI1IDggOC4yNUg2LjVhMyAzIDAgMSAxIDYgMGMwIC42Ni0uMjcgMS4yNi0uNjk3IDEuNjg4eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo="><a href="/helpcentre?otracker=undefined_footer_footer_navlinks"><span class="_1Dwg_s">Help Center</span></a></div>
+        <span class="_2tFDQF">
+           © 2007- 2020 - <span>Flipkart.com</span>
+        </span>
+        <img src="//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/payment-method_b3ab24.svg">
+     </div>
+  </div>
+</div>
+</section>
+----FLIPKARKT NINTHBLOCK ENDS HERE------>
+
+
+<!--- flipkart tenth block starts here
+        <section id="conclusionblock">
+          <article>
+               <header>
+                   <div>
+                       <h5>About redBus</h5>
+                       <h6><a href="/info/aboutus" target="_blank">About Us</a></h6>
+                          <h6><a href="/info/contactus" target="_blank">Contact Us</a></h6>   
+                              <h6><a href="//m.redbus.in" target="_blank">Mobile Version</a></h6> 
+                                  <h6><a href="/info/mobile" target="_blank">redBus on Mobile</a></h6> 
+                                      <h6><a href="/sitemap.html" target="_blank">Sitemap</a></h6>
+                                          <h6><a href="/info/OfferTerms" target="_blank">Offers</a></h6>
+                                              <h6><a href="/careers" target="_blank">Careers</a></h6>
+                                                  <h6><a href="/values" target="_blank">Values</a></h6>
+                   </div>
+                   <div>
+                       <h5>Info</h5>
+                       <h6> <a href="/info/termscondition" target="_blank">T &amp; C</a></h6>
+                          <h6><a href="/info/privacypolicy" target="_blank">Privacy Policy</a></h6>
+                              <h6><a href="/info/faq" target="_blank">FAQ</a></h6>
+                                  <h6><a href="http://blog.redbus.in/" target="_blank">Blog</a></h6>
+                                      <h6><a href="https://in3.seatseller.travel/" target="_blank">Agent Registration</a></h6>
+                                          <h6><a href="https://www.icicilombard.com/" target="_blank">Insurance Partner</a></h6>
+                                              <h6><a href="/info/useragreement" target="_blank">User Agreement</a></h6>
+                           </div>
+                   <div>
+                       <h5>Global Sites</h5>
+                      <h6><a href="https://www.redbus.in" target="_blank">India</a></h6>
+                          <h6><a href="https://www.redbus.sg" target="_blank">Singapore</a></h6>
+                              <h6><a href="https://www.redbus.my" target="_blank">Malaysia</a></h6>
+                                  <h6><a href="https://www.redbus.id" target="_blank">Indonesia</a></h6>
+                                      <h6><a href="https://www.redbus.pe" target="_blank">Peru</a></h6>
+                                          <h6> <a href="https://www.redbus.co" target="_blank">Colombia</a></h6>
+                   </div>
+                   <div>
+                       <h5>Our Partners</h5>
+                       <h6><a href="https://www.goibibo.com/" target="_blank">Goibibo</a></h6>
+                       <h6><a href="https://www.makemytrip.com/" target="_blank">Makemytrip</a></h6>
+                   </div>
+                   <div class="physco">
+                       <h6>image</h6>
+                       <p>redBus is the world's largest online bus ticket booking service trusted by over 18 million happy customers globally. redBus offers bus ticket booking through its website,iOS and Android mobile apps for all major routes.</p>
+                       <main>
+                          <a   target="_blank" href="https://www.facebook.com/redbus.in/"><i class="fab fa-facebook"></i></a>
+                          <a target="_blank" href="https://twitter.com/redBus_in"><i class="fab fa-twitter-square"></i></a>
+                       </main>
+                       <footer>
+                           <h4>Ⓒ 2020 ibibogroup All rights reserved</h4>
+                       </footer>
+                   </div>
+               </header>         
+          </article>
+      </section>-----flipkart tenthblock ENDS HERE------>
+  </body>
+</html> 

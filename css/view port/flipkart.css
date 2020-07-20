@@ -11,14 +11,14 @@ body {
         Arial,
         sans-serif;
     letter-spacing: 0;
-    background-color: #e9e9e9;
+    background-color: #f1f3f6;
 }
 
 #headerBlock {
     background-color: #2874f0;
     width: 100%;
     height: 56px;
-    position: fixed;
+    position: relative;
 }
 
 #headerBlock article {
@@ -124,50 +124,54 @@ body {
 }
 
 .rightHeader nav>ul>li>a {
-    padding: 0 15px 0 33px;
+    padding: 26px 15px 18px 33px;
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
+    font-weight: 600;
 }
-.first-child .nav-link{
-    color: #2478f0;
-    padding: 6px 40px   ;
-    background: white;
+
+.rightHeader nav ul>li:nth-child(1) a.first-child {
+    background: #fff;
+    color: #2874f0;
+    padding: 6px 40px;
     border-radius: 1px;
     box-shadow: 0px 0px 1px 0px #11111140;
 }
-/*.arrow{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 32px;
-    transform: rotate(180deg);
-    padding-top: 37px;
-    color: white;
-}
-.fa-sort-down{
-    display: none;
-}*/
+
 .rightHeader svg {
     transform: rotate(270deg);
     margin: 0px 4px;
 }
-
+.rightHeader ul li a:hover ._34Yjv1{
+    transform: rotate(90deg) !important;
+    -webkit-transform: rotate(90deg); 
+}
 /*-----flipkart dropdown menu -----------*/
 .first-child {
     position: relative;
 }
-
+.first-child {
+    
+    background-color: white;
+    padding: 5px 15px;
+    font-weight: 100;
+    margin-right: 15px;
+    z-index: 1;
+}
+.first-child .nav-links{
+    color: #2870f0;
+    padding: 25px;
+    font-weight: 500;
+}
 .dropdown {
     position: absolute;
     display: none;
     flex-direction: column;
     list-style: none;
-    background: #fff;
     width: 260px;
-    box-shadow: 1px 0px 6px 0px #ccc;
-    margin: 20px 0;
-    left: -66px;
+    margin: 7px 0;
+    left: -76px;
+    box-shadow: 1px 2px 2px 1px lightgrey;
 }
 
 .dropdown .nav-item .nav-link {
@@ -178,14 +182,18 @@ body {
 .dropdown a {
     text-decoration: none;
     color: #444;
-    border-bottom: 1px solid #eee;
     display: block;
     width: 100%;
-    padding: 15px 15px;
+    padding: 15px 0;
+    transition: all .5s ease;
 }
 
 .customer_links {
     display: flex;
+}
+
+.customer_links span {
+    flex: 1;
 }
 
 .customer_links span a.customer {
@@ -195,12 +203,1008 @@ body {
 
 .customer_links span a.signup {
     color: #2874f0;
+    text-align: right;
 
 }
 
-ul>li:hover ul , .arrow{
+ul>li:hover ul {
     display: flex;
 }
 
+.dropdown li {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
 
+.triangle {
+    width: 0;
+    height: 0;
+    border-right: 11px solid transparent;
+    border-left: 11px solid transparent;
+    border-bottom: 11px solid #fff;
+    position: relative;
+    margin: auto;
+}
+
+.dropdownMenu {
+    display: flex;
+    align-items: center; 
+    
+}
+
+.dropdownMenu span {
+    margin: 0px 15px;
+}
+
+.dropdownMenu span i {
+    color: #2874f0;
+}
+
+span.plus_icon img {
+    width: 14px;
+    filter: invert(1);
+}
+
+.customer_links span a {
+    font-size: 14px;
+    font-weight: bold;
+}
+.moredropdown{
+    position: absolute;
+    flex-direction: column;
+    list-style: none;
+    width: 260px;
+    margin: 7px 0;
+    left: 1100px;
+    display: none;
+    z-index: 1; 
+    box-shadow: 1px 2px 2px 1px lightgrey;
+}
+.moredropdown a{
+    text-decoration: none;
+    width: 100%;
+    padding: 15px 0;
+    transition: all .5s ease;
+    color: #111;
+    font-size: 15px;    
+}
+.moredropdown li{
+    background-color: #fff;
+    border-bottom: 1px solid #eee;    
+}
+ul>li:hover svg{
+   rotate: 180;
+
+}
 /*-------right menu css ends here ----*/
+
+
+/*----flipkart firstblock starts here --*/
+
+.firstblock{
+    width: 100%;
+    background-color: white;
+    height: 40px;
+    box-shadow: 1px 1px 1px 1px white;
+}
+.firstblock article{
+    width: 1200px;
+    margin: 0 auto;
+}
+#barsBlock {
+    display: none;
+}
+.firstblock ul{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+}
+.firstblock ul li a{
+    text-decoration: none;
+    color: #212121;
+    font-weight: 600;
+    font-size: 15px;
+}
+.firstblock ul li a:hover{
+    color: #2874f0;
+}
+.firstblock ul li a svg{
+    margin-left: 6px;
+    transform: rotate(270deg);
+}
+.firstblock ul li a svg path{
+    fill:#878787 !important;
+    opacity: 0.5;
+}
+#mainmenu ul li:hover ._34Yjv1{
+    transform: rotate(90deg) !important;
+    -webkit-transform: rotate(90deg);
+}
+#mainmenu ul li:hover ._34Yjv1 path{
+    fill: #2874f0 !important;
+}
+
+/*----flipkart firstblock ends here -----*/
+/*drop down mega menu starts here*/
+.megadropdownmenu{
+    background: white;
+    width: 1200px !important;
+    position: absolute !important;
+    box-shadow: 1px 1px 3px 0px gray ;
+    margin: 13px -30px;
+    height: 520px;
+    display: none;
+}
+.megadropdownmenu div{
+    flex-basis: 25%;
+    padding: 20px;
+    z-index: 1;
+}
+.megadropdownmenu div:nth-child(odd){
+    background: white;
+    
+
+}
+.megadropdownmenu div:nth-child(even){
+    background-color: #f1f3f6;
+}
+.arrowp{
+    font-size: 12px;
+    color: gray;
+    margin: 3px;
+    opacity: 0.5;
+}
+.megadropdownmenu div ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 26px;
+    position: relative;
+    margin-top: 220px; 
+}
+.megadropdownmenu div ul li a{
+    font-size: 13px !important;
+    color: #212121;
+    font-weight: 400;
+}   
+.laptops{
+    margin-top: 180px !important;
+}
+.featured{
+    margin-top: 210px  !important;
+}
+#mainmenu ul>li:hover .megadropdownmenu{
+display: flex;
+}
+/* drop down mega ends here*/
+
+/* flipkart secondblock  starts here*/
+#secondblock article{
+    width: 1515px;
+    background-color: white;
+    margin: 10px;
+    height: 355px;
+    margin-top: 18px;
+}
+.secondblocknav{
+    display: flex;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+.leftscenario h1{
+    font-size: 22px;
+}
+.rightbutton{
+    margin-left: 1200px;
+}
+.rightbutton button{
+    color: white;
+    background-color: #2478f0;
+    border: none;
+    padding: 10px 14px;
+    box-shadow: 1px 1px 1px 1px lightgrey;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+hr{
+    background: grey;
+    opacity: 0.2;
+}
+.imgmain{
+    margin: 25px;
+    margin-left: 50px;
+    word-spacing: 80px;
+}
+#secondblock footer{
+    display: flex;
+}
+.footerimg{
+    margin: 40px;
+    margin-top: -20px;
+}
+.imgdia{
+    padding-left: 17px;
+}
+.imgdia h4{
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+}
+.imgdia h5{
+    color: green;
+    padding: 15px;
+}
+.imgdia h6{
+    color: grey;
+}
+.imgdib{
+    padding-left: 90px;
+}
+.imgdib h4{
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+}
+.imgdib h5{
+    color: green;
+    padding: 15px;
+}
+.imgdib h6{
+    color: grey;
+}
+.imgdic{
+    padding-left: 85px;
+}
+.imgdic h4{
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+}
+.imgdic h5{
+    color: green;
+    padding: 15px;
+}
+.imgdic h6{
+    color: grey;
+}
+.imgdid{
+    padding-left: 60px;
+}
+.imgdid h4{
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+}
+.imgdid h5{
+    color: green;
+    padding: 15px;
+}
+.imgdid h6{
+    color: grey;
+}
+.imgdie{
+    padding-left: 70px;
+}
+.imgdie h4{
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+}
+.imgdie h5{
+    color: green;
+    padding: 15px;
+}
+.imgdie h6{
+    color: grey;
+}
+.imgdig{
+    padding-left: 85px;
+}
+.imgdig h4{
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 14px;
+}
+.imgdig h5{
+    color: green;
+    padding: 15px;
+}
+.imgdig h6{
+    color: grey;
+}
+.imgdih{
+    padding-left: 85px;
+}
+.imgdih h4{
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 20px;
+}
+.imgdih h5{
+    color: green;
+    padding-top: 13px;
+    padding-left: 10px;
+}
+.imgdih h6{
+    color: grey;
+    padding-top: 15px;
+
+}
+
+/* flipkart secondblock  ends here*/
+
+
+/* flipkart thirdblock starts here*/
+#thirdblock{
+    width: 1515px;
+    background-color: white;
+    height: 320px;
+    margin-left: 10px;
+}
+.imgpp img{
+    margin: 10px;
+    width: 1490px;
+    height: 300px;
+}
+
+/* flipkart thirdblock ends here*/
+
+/* flipkart fourthblock starts here*/
+#fourthblock{
+    width: 1515px;
+    background-color: white;
+    height: 275px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#fourthblock article{
+    display: flex;
+}
+.imgpq img{
+    margin: 10px;
+    width: 480px;
+}
+
+/* flipkart fourthblock ends here*/
+
+/*flipkart fifthblock starts here*/
+#fifthblock{
+    width: 1000px;
+    height: 300px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 225px;
+}
+#fifthblock article img{
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 970px;
+    height: 275px
+}
+/*flipkart fifthblock starts here*/
+.imgmain1{
+    margin: 25px;
+    margin-left: 50px;
+    word-spacing: 100px;
+}
+.imgdi1{
+    padding-left: 17px;
+}
+.imgdi1 h4{
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+}
+.imgdi1 h5{
+    color: green;
+    padding: 15px;
+}
+.imgdi1 h6{
+    color: grey;
+    margin-left: 15px;
+}
+.imgdi2{
+    padding-left: 90px;
+}
+.imgdi2 h4{
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+}
+.imgdi2 h5{
+    color: green;
+    padding: 15px;
+    margin-left: 20px;
+}
+.imgdi2 h6{
+    color: grey;
+    margin-left: 35px;
+}
+.imgdi3{
+    padding-left: 85px;
+}
+.imgdi3 h4{
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+}
+.imgdi3 h5{
+    color: green;
+    padding: 15px;
+}
+.imgdi3 h6{
+    color: grey;
+}
+.imgdi4{
+    padding-left: 60px;
+}
+.imgdi4 h4{
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 48px;
+}
+.imgdi4 h5{
+    color: green;
+    padding: 15px;
+    margin-left: 48px;
+}
+.imgdi4 h6{
+    color: grey;
+    margin-left: 70px;
+}
+.imgdi5{
+    padding-left: 70px;
+}
+.imgdi5 h4{
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 60px;
+}
+.imgdi5 h5{
+    color: green;
+    padding: 15px;
+    margin-left: 35px;
+}
+.imgdi5 h6{
+    color: grey;
+    margin-left: 45px;
+}
+.imgdi6{
+    padding-left: 85px;
+}
+.imgdi6 h4{
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 14px;
+    margin-left: 20px;
+
+}
+.imgdi6 h5{
+    color: green;
+    padding: 15px;
+    margin-left: 15px;
+
+}
+.imgdi6 h6{
+    color: grey;
+    margin-left: 15px;
+
+}
+.imgdi7{
+    padding-left: 85px;
+}
+.imgdi7 h4{
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 20px;
+    margin-left: 5px;
+
+}
+.imgdi7 h5{
+    color: green;
+    padding-top: 13px;
+    padding-left: 15px;
+    
+}
+.imgdi7 h6{
+    color: grey;
+    padding-top: 15px;
+    margin-left: 27px;
+
+}
+
+/*flipkart sixthblock ends here*/
+/*flikart seventhblock starts here*/
+#seventhblock article{
+      width: 1450px;
+      margin-top: 10px;
+      margin-left: 40px;
+      height: 380px;
+  }
+  #seventhblock article div{
+      display: flex;
+  }
+  #seventhblock article img{
+    margin-top: 30px !important;
+    margin-left: 130px !important;
+  }
+/*flikart seventhblock ends here*/
+
+/*flipkart eigthblock starts here*/
+
+.CSSgal {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    /* Or set a fixed height */
+}
+
+/* SLIDER */
+
+.CSSgal .slider {
+    height: 282px;
+    white-space: nowrap;
+    font-size: 0;
+    transition: 0.8s;
+    margin: 7px;
+    background-color: #ccc;
+}
+
+/* SLIDES */
+
+.CSSgal .slider>* {
+    font-size: 1rem;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    height: 100%;
+    width: 100%;
+    background: none 50% no-repeat;
+    background-size: cover;
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.CSSgal .prevNext {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 100%;
+    height: 0;
+}
+
+.CSSgal .prevNext>div+div {
+    visibility: hidden;
+    /* Hide all but first P/N container */
+}
+
+.CSSgal .prevNext a {
+    background: #fff;
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    line-height: 110px;
+    /* If you want to place numbers */
+    text-align: center;
+    opacity: 1;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0px;
+    /* border-radius: 0px 4px 4px 0px; */
+}
+
+.CSSgal .prevNext a:hover {
+    opacity: 1;
+}
+
+.CSSgal .prevNext a+a {
+    left: auto;
+    right: 0;
+}
+
+/* NAVIGATION */
+
+.CSSgal .bullets {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.CSSgal .bullets>a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.CSSgal .bullets>a+a {
+    background: rgba(255, 255, 255, 0.5);
+    /* Dim all but first */
+}
+
+.CSSgal .bullets>a:hover {
+    background: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* NAVIGATION BUTTONS */
+/* ALL: */
+.CSSgal>s:target~.bullets>* {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* ACTIVE */
+#s1:target~.bullets>*:nth-child(1) {
+    background: rgba(255, 255, 255, 1);
+}
+
+#s2:target~.bullets>*:nth-child(2) {
+    background: rgba(255, 255, 255, 1);
+}
+
+#s3:target~.bullets>*:nth-child(3) {
+    background: rgba(255, 255, 255, 1);
+}
+
+#s4:target~.bullets>*:nth-child(4) {
+    background: rgba(255, 255, 255, 1);
+}
+
+/* More slides? Add here more rules */
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.CSSgal>s:target~.prevNext>* {
+    visibility: hidden;
+}
+
+/* ACTIVE: */
+#s1:target~.prevNext>*:nth-child(1) {
+    visibility: visible;
+}
+
+#s2:target~.prevNext>*:nth-child(2) {
+    visibility: visible;
+}
+
+#s3:target~.prevNext>*:nth-child(3) {
+    visibility: visible;
+}
+
+#s4:target~.prevNext>*:nth-child(4) {
+    visibility: visible;
+}
+
+/* More slides? Add here more rules */
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target~.slider {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+}
+
+#s2:target~.slider {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+#s3:target~.slider {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+}
+
+#s4:target~.slider {
+    transform: translateX(-300%);
+    -webkit-transform: translateX(-300%);
+}
+
+/* More slides? Add here more rules */
+
+
+/* YOU'RE THE DESIGNER! 
+   ____________________
+   All above was mainly to get it working :)
+   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
+.CSSgal {
+    color: #fff;
+    text-align: center;
+}
+
+.CSSgal .slider h2 {
+    margin-top: 40vh;
+    font-weight: 200;
+    letter-spacing: -0.06em;
+    word-spacing: 0.2em;
+    font-size: 3em;
+}
+
+.CSSgal a {
+    /* border-radius: 50%; */
+    margin: 0 3px;
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+
+.slider img {
+    width: 100%;
+    height: 280px;
+
+}
+
+.prevNext svg path {
+    fill: #212121 !important;
+}
+
+._2gp_O1 {
+    transform: rotate(180deg) !important;
+}
+/*flipkart eigthblock ends here*/
+
+/*------flipkart tenthblock starts here------*/
+  #finalblock{
+    background-color: white;
+    opacity: 800;
+
+}
+#finalblock article{
+    margin: 10px auto;
+    width: 1250px;
+    height: 470px;   
+}
+#finalblock article>header{
+    display: flex;
+    margin-top: 10px;
+
+}
+#finalblock article>header div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    display: inline-block;
+}
+hr{
+    margin: 0;
+}
+#finalblock article>header div h4{
+    font-size: 15px;
+    color: #2478f0;
+}
+#finalblock article>header div a{
+    text-decoration: none;
+}
+#finalblock article>header div a h5:hover{
+    color: #d74f57;
+}
+#finalblock article>header div  h5{
+    color: black;
+    font-weight: 100;
+    text-transform: capitalize;
+    font-size: 13px;
+}
+#finalblockfooter h4{
+    color: #2478f0;
+    margin: 15px;
+}
+#finalblockfooter p{
+    
+    margin-top: 10px;
+    display: block;
+    margin-right: 10px;
+    border-right: 1px solid #999;
+    line-height: 32px;
+    margin-bottom: 10px;
+    padding: 0;
+    margin: 0;
+    border-spacing: 1px;
+}
+
+#finalblockfooter a{
+    float: left;
+    margin: 5px;
+    padding: 13px;
+    border-right: 1px solid #999;
+    font-size: 13px;
+    text-decoration: none;
+    color:#444343;
+    font-weight: 100;
+    line-height: 0px;
+}
+#finalblockfooter a:hover{
+    color: #d74f57;
+}
+#dddd{
+    margin-top: 200px;
+    margin-left: 1100px;
+}
+#dddd a{
+    color:#2478f0;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#dddd a:hover{
+    color:grey;
+}
+
+._3qd5C5 {
+    flex: 1;
+}
+._18wTSA {
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+._38DIp6, .m6ABEi {
+        font-size: 12px;
+        white-space: nowrap;
+}
+._38DIp6 {
+        border-left: 1px solid #454d5e;
+        padding: 0 25px;
+}
+._2V3TtE {
+    font-style: normal;
+    color: #fff;
+    background-color: #172337;
+}
+._3Lv0nZ {
+    background-color: #fff;
+    font-size: 12px;
+}
+._3Lv0nZ ._3aS5mM {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+._2V3TtE p {
+    margin-bottom: 0;
+}
+._3Lv0nZ div, ._3Lv0nZ h1, ._3Lv0nZ h2, ._3Lv0nZ h3, 
+._3Lv0nZ h4, ._3Lv0nZ h5, ._3Lv0nZ h6, ._3Lv0nZ p {
+    padding: 0;
+    line-height: 1.5;
+}
+._3qd5C5:last-child {
+    margin-right: 0;
+}
+a, img {
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+.m6ABEi {
+    margin-bottom: 10px;
+    padding-left: 14px;
+}
+._38DIp6, .m6ABEi {
+    font-size: 12px;
+    white-space: nowrap;
+}
+._2V3TtE {
+    font-style: normal;
+    color: #fff;
+    background-color: #172337;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ninthblock a,img {
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none;
+}
+._1DXv5h ._1Dwg_s {
+    color: #fff;
+    margin-left: 8px;
+}
+._2tFDQF {
+    color: #fff;
+}
+.row {
+    
+    display: flex;
+    flex-flow: row wrap;
+}
+.col, .row {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*------flipkart Tenthblock ends here------*/
+/*flipkart tenthblock starts here
+#conclusionblock{
+    background-color: #1b2330;
+    margin: -22px;
+}
+#conclusionblock article{
+    width: 1200px;
+    margin: 0 auto;
+}
+#conclusionblock article>header{
+    display: flex;
+    margin-top: 10px;
+}
+#conclusionblock article>header div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: px;
+    display: inline-block;
+}
+#conclusionblock article>header div h5{
+    font-size: 15px;
+    font-weight: 800;
+    color:#797979;
+
+}
+#conclusionblock article>header div h6{
+    font-size: 12px;
+    line-height: 1px;
+    font-weight: 100;
+}
+#conclusionblock article>header div a{
+    text-decoration: none;
+    color: white;
+
+}
+#conclusionblock article>header div a:hover{
+    color: #d74f57;
+}
+.physco h6{
+    background-image: url('../images/logo.png');
+    color: white;    
+    text-indent: -99999px;
+    width: 80px;
+    height: 48px;
+}
+.physco p{
+    color: white;
+    font-size: 13px;
+    line-height: 18px;
+    word-spacing: 2px;
+}
+.physco h4{
+    font-size: 12px;
+    color: white;
+    font-weight: 100;
+}
+flipkart tenthblock ends here*/
